@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="tmp.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script>
+  (function(){
+    App(['module1'], function (Modules) {
+      let container = document.getElementById('container');
+      Modules['module1'].doSmth(container);
+    });
+  })();
+</script>
+</body>
+</html>
